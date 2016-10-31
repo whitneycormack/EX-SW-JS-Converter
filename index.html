@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Converter - Static Web JS Exercise</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>Temperature Converter</h1>
+
+    <h2>Let's Convert Some Temps</h2>
+    <!-- don't use a form here/ forms have their own set of allowances & won't cooperate with the event handlers if you want the click event to be attached to the enter key -->
+      <label>
+        <p>Enter a temperature to convert</p>
+
+  <!-- In the HTML, have one input field where someone can enter in a temperature. -->
+          <input id="userInput" type="text" name="userInput">
+      </label>
+
+  <!-- Create a radio button group where Celsius or Fahrenheit can be selected as the scale that the number should be converted to. -->
+       <label>
+            <input id="FahrRadio" type="radio" name="temp" value="Fahrenheit"> to &degFahrenheit
+      </label>
+
+      <label>
+            <input id="CelRadio" type="radio" name="temp" value="Celsius" check="checked"> to &degCelsius
+      </label>
+
+  <!-- Create a button that, when clicked, displays the converted temperature. -->
+      <button id="SubmitButton" type="Submit" name="Submit">Submit</button>
+  <!-- Create another button that, when clicked, clears any text in the input field. -->
+      <button id="ClearButton" type="Clear" name="Clear">Clear</button>
+
+ <br>
+ <br>
+
+
+  <!-- Create a block level element that will hold the text of the converted temperature. -->
+
+    <h3>Your converted temperature is:</h3>
+      <div id="output">
+
+        </div>
+
+
+
+<!--  -->
+
+<script type="text/javascript" src="converter.js"></script>
+</body>
+</html>
+
+
+
+
+
